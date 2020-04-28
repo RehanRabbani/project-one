@@ -9,6 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
 <style>
     body{
         background-color: #101010;
@@ -36,8 +37,12 @@
         height: 400px;
         width: 100%;
     }
+    .navbar-brand{
+        font-family: 'Girassol', cursive;
+        }
     .childdivone,.childdivtwo{
-       font-size: 3rem;
+        font-family: 'Girassol', cursive;
+       font-size: 3.5rem;
        font-weight: 900;
        color: white;
         display: flex;
@@ -48,7 +53,7 @@
     .childdivone{
        background-image: url('1.jpg'); 
      
-    height: 400px;
+    height: 430px;
      width: 50%;
     }
     .childdivtwo{
@@ -56,16 +61,19 @@
        background-position: center;
        background-size: contain;
       
-       height: 400px;
+       height: 430px;
         width: 50%;
     }
     
     .parentdivtwo{
-        margin-top: 2rem;
+        margin-top: 5rem;
         height: 400px;
         margin-left: 2rem;
         width: 95%;
         background-image: url('4.jpg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .parentdivthree{
         margin-top: 2rem;
@@ -73,6 +81,9 @@
         margin-left: 2rem;
         width: 95%;
         background-image: url('5.jpg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .childdivthree
     {
@@ -96,24 +107,34 @@
    .btnone{
         margin-left: 1rem !important;
     }
+    a:hover{
+        text-decoration: none;
+    }
     .hide{
         position: absolute;
   width: 50%;
-  opacity: 0;
-  height: 400px;
-  display: inline-flex;
+  
+  height: 430px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+color: white;
+  justify-content: center;
     }
     .hide:hover {
+        opacity: 0.5;
         width: 50%;
   font-weight: bold;
-  background-color: black;
+  background-color:rgba(0, 0,0, 0.9);
   color: white;
-  height: 400px;
+  height: 430px;
   opacity: 1;
 }
+.navbar-toggler-icon,.navbar-toggler{
+        color: white !important;
+        background-color: white !important;
+    }
+
     @media only screen and (max-width: 600px) {
         .childdivone,.childdivtwo{
             font-size: 1rem ;
@@ -124,7 +145,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="sword.png"  height="40px" class="pol"/>card game</a>
+        <a class="navbar-brand" href="index.html"><img src="sword.png"  height="40px" class="pol"/>card game</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -151,15 +172,17 @@
         </div>
       </nav>   
       <div class="parentdivone">
-          <div class="childdivone">GAMES</div>
-          <div class="childdivtwo"><span class="hide ">
-              <p>Card Room: Deuces,Last Card</p>
-          </span></div>
+          <div class="childdivone"><a href="#" class="hide ">GAMES</a></div>
+          <div class="childdivtwo">  <a href="games.html" class="hide ">
+            Card Room: Deuces,Last Card
+       </a></div>
          
       </div> 
-      <div class="parentdivtwo">
+      
+        <div class="parentdivtwo">
 
-      </div>
+        </div>
+     
       <div class="parentdivthree">
 
     </div>
@@ -180,7 +203,7 @@
         
         <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
       </div>
-      <button type="button" class="btn btn-dark btnone">Dark</button>    
+      <button type="button" class="btn btn-dark btnone">SIGN UP</button>    
 </div>
     </div>
 </body>

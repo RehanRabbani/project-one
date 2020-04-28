@@ -8,9 +8,177 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+<style>
+     body{
+        background-color: #101010;
+        color: white;
+    }
+        .bg-light{
+        background-color: black !important;
+        color: white !important;
+    }
+    .navbar-light .navbar-brand{
+        color: white !important;
+    }
+    .navbar-light .navbar-nav .active>.nav-link{
+        color: white !important;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: white !important; 
+    }
+    .navbar-brand >img{
+        color: white !important;
+    }
+    .parentone{
+        font-family: 'Girassol', cursive;
+      
+        font-weight: 900;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #borderimg2 { 
+  border: 10px solid transparent;
+  padding: 50px;
+  border-color: black;
+  border-image: url(border.png) 30 stretch;
+}
+.border-one{
+   
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bone{
+    font-size: 4.5rem;
 
+    margin-bottom: 0px !important;
+}
+.btwo{
+    margin-top: 0px !important;
+    font-size: 5rem;
+}
+.parenttwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .parenttwo>.input-group{
+        width: 50% !important;
+    }
+    .btn-outline-light{
+        margin-top: 1rem;
+        width: 130px !important;
+        border: 2px solid;
+    }
+    .parenthree{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        width: 100%;
+        height: 100px;
+    }
+    .ios,.and{
+        width: 200px;
+        margin-left: 2rem;
+        height: 60px;
+        border: 1px solid white;
+       border-radius: 5px ;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .ios{
+        background-image: url('ios.PNG');
+        
+    }
+    .and{
+        background-image: url('and.PNG');
+    }
+    .navbar-toggler-icon,.navbar-toggler{
+        color: white !important;
+        background-color: white !important;
+    }
+   .parentfour{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      
+      
+       height: 350px;
+       width: 100%;
+   }
+   .navbar-brand{
+        font-family: 'Girassol', cursive;
+        }
+   .vid{
+      background-image: url('6.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+       height: 300px;
+       width: 600px;
+   }
+</style>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="sword.png"  height="40px" class="pol"/>card game</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon o"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> STORE<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NEWS & LORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RULES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <div class="parentone">
+        <div class="border-one"> 
+            <p class="bone">CARD ROOM</p>
+            <p class="btwo"> Deuces,Last Card </p>
+           
+        </div>
+        
+      </div>
+     <div class="parenttwo">
+        <p>Experience tactical combat like never before,  unleash your forces using the Ascension deckbuilding system.</p>
+        <div class="input-group input-group-lg">
+        
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <button type="button" class="btn btn-outline-light">TO WAR !</button>
+     </div>
+     <div class="parenthree">
+         <a href="https://apps.apple.com/us/app/card-room-deuces-last-card/id1371711302?ls=1"><div class="ios"></div></a>
+        <a href="https://play.google.com/store/apps/details?id=com.dcg.card_room"> <div class="and"></div></a>
+
+     </div>
+     <div class="parentfour">
+        <div class="vid"></div>
+     </div>
 </body>
 </html>
